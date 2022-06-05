@@ -1,0 +1,23 @@
+@use "./partials/colors";
+@use "./partials/fonts";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "AvenirNext LT Pro";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$mercury;
+}
