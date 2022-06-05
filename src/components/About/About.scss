@@ -5,10 +5,7 @@
   @include container;
 
   &__title {
-    font-size: 1.5rem;
-    @include tablet {
-      font-size: 2.25rem;
-    }
+    @include h2;
   }
 
   &__figure {
