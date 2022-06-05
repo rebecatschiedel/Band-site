@@ -1,0 +1,82 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts";
+
+.about {
+  @include container;
+
+  &__title {
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__figure {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+    margin: 1rem 0 2rem;
+    @include tablet {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+  &__img {
+    //trim the top of the image
+    height: 45vw;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+  }
+  &__quote {
+    @include tablet {
+      margin-block: 1rem;
+    }
+  }
+  &__caption {
+    line-height: 1.5rem;
+
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    & cite {
+      font-style: normal;
+    }
+  }
+  &__description {
+  }
+  &__subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__container {
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__paragraph {
+    font-size: 0.83rem;
+    line-height: 1.4rem;
+
+    & + & {
+      margin-top: 1rem;
+
+      @include tablet {
+        margin-top: 0;
+        margin-left: 1rem;
+      }
+    }
+
+    @include tablet {
+      font-size: 0.875rem;
+      line-height: 1.6rem;
+    }
+  }
+}

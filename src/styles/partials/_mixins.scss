@@ -11,3 +11,10 @@
     @content;
   }
 }
+
+@mixin container {
+  padding: 2rem 1rem;
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-inline: 3rem;
+  }
+}

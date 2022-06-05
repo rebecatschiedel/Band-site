@@ -12,8 +12,11 @@
     url("../../assets/Images/hero-bio.jpg");
 
   background-size: cover;
-  background-position: bottom;
-  height: 70vh;
+  background-position: top;
+  min-height: 15rem;
+  max-height: 80vh;
+  //height increases relatively to the viewport width
+  height: 60vw;
 
   &__title {
     color: colors.$white;
