@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colors";
+
+.comments {
+  @include container;
+
+  &__title {
+    @include h2;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid colors.$mercury;
+    padding-bottom: 2rem;
+  }
+
+  &__avatar {
+    background-image: url("../../assets/Images/Mohan-muruge.jpg");
+    background-position: left;
+    background-size: cover;
+    flex-shrink: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: 1rem 1rem 1rem 0;
+
+    @include tablet {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}

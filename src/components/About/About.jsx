@@ -20,7 +20,7 @@ export default function About() {
           - <cite>Bryan Teddy</cite>, lead vocalist of The Bees Knees
         </figcaption>
       </figure>
-      <section className="about__description">
+      <section>
         <h3 className="about__subtitle">The Bees Kness</h3>
         <div className="about__container">
           <p className="about__paragraph">

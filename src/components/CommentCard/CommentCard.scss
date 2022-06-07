@@ -1,0 +1,84 @@
+@use "../../styles/partials/colors";
+@use "../../styles/partials/mixins" as *;
+
+.comment-card {
+  display: flex;
+  margin-block: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid colors.$mercury;
+  justify-content: center;
+
+  &__avatar {
+    background-color: colors.$mercury;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: 0rem 1rem 1rem 0;
+    flex-shrink: 0;
+
+    @include tablet {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 0.86rem;
+    }
+  }
+  &__timestamp {
+    color: colors.$silver;
+
+    @include tablet {
+      font-size: 0.86rem;
+    }
+  }
+
+  &__comment {
+    color: colors.$dark-black;
+    line-height: 1.4;
+
+    @include tablet {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  &__like-count {
+    padding: 0.1rem;
+    margin-left: 0.5rem;
+    background-color: colors.$black;
+    text-align: center;
+    width: 1.5rem;
+    border-radius: 5px;
+    color: colors.$white;
+  }
+
+  &__like {
+    cursor: pointer;
+  }
+
+  &__delete {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

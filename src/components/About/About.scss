@@ -12,7 +12,7 @@
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.6rem;
-    margin: 1rem 0 2rem;
+    margin-bottom: 2rem;
     @include tablet {
       font-size: 1.4rem;
       line-height: 2rem;
@@ -41,8 +41,7 @@
       font-style: normal;
     }
   }
-  &__description {
-  }
+
   &__subtitle {
     font-size: 0.875rem;
     margin-bottom: 1rem;
